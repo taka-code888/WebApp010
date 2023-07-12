@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>コーヒー豆注文</title>
+</head>
+<body>
+     <h1>コーヒー豆注文</h1>
+     <form method="POST" action="RegistOrderServlet">
+        <table border="1">
+          <tr bgcolor="#8eafed">
+          <th></th>
+          <th>商品名</th>
+          <th>原産地域</th>
+          <th>原産地</th>
+          <th>値段</th>
+          </tr>
+          <tr>
+             <td><input type="radio" name="itemId" value="4"></td>
+             <td>マンデリン</td>
+             <td>アジア</td>
+             <td>スマトラ島</td>
+             <td>500</td>
+           </tr>
+           <tr>
+             <td><input type="radio" name="itemId" value="5"></td>
+             <td>ジャワコーヒー</td>
+             <td>アジア</td>
+             <td>ジャワ島</td>
+             <td>450</td>
+           </tr>
+           <tr>
+             <td><input type="radio" name="itemId" value="6"></td>
+             <td>ベトナム</td>
+             <td>アジア</td>
+             <td>ベトナム</td>
+             <td>600</td>
+           </tr>
+         </table>
+         <br/>
+         <table>
+            <tr>
+               <th>氏　名</th>
+               <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+               <th>住　所</th>
+               <td><input type="text" name="address"  /></td>
+               </tr>
+            <tr>
+               <th>電話番号</th>
+               <td><input type="text" name="telNumber"  /></td>
+            </tr>
+         </table>
+     <br/>
+     
+     <input type="submit" value="注文" />
+     
+     </form>
+
+</body>
+</html>
